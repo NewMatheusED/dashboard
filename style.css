@@ -24,7 +24,7 @@ html, body {
 
 .sideBar {
     width: 20%;
-    height: 100vh;
+    height: 100%;
     background-color: #2d3035;
     max-width: 300px;
 }
@@ -33,6 +33,7 @@ html, body {
     background-color: #26282d;
     text-align: center;
     padding: 15px 5px;
+    height: 61px;
 }
 
 .sideBar .headerSide h3 {
@@ -77,6 +78,7 @@ html, body {
 }
 
 .mainContent header {
+    height: 61px;
     background-color: #fff;
     border-bottom: 2px solid #cccccc83;
     padding: 15px 20px;
@@ -134,7 +136,7 @@ html, body {
 
 .content {
     width: 70%;
-    height: 100vh;
+    height: calc(100vh - 61px);
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -165,7 +167,7 @@ html, body {
 
 .notification {
     width: 30%;
-    height: 100vh;
+    height: calc(100vh - 61px);
     background-color: #eaebeb;
     overflow-y: auto;
 }
