@@ -83,7 +83,7 @@ html, body {
     border-bottom: 2px solid #cccccc83;
     padding: 15px 20px;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
 }
 
 .mainContent header .campoPesquisa {
@@ -96,11 +96,16 @@ html, body {
     margin-right: 15px;
 }
 
-.mainContent header .alertIcon i {
+.mainContent header .alertIcon i, .mainContent header .menuIcon i {
     transition: .2s ease-in-out;
 }
 
-.mainContent header .campoPesquisa:hover .icon, .mainContent header .alertIcon:hover i {
+.mainContent header .menuIcon {
+    opacity: 0;
+    cursor: default !important;
+}
+
+.mainContent header .campoPesquisa:hover .icon, .mainContent header .alertIcon:hover i, .mainContent header .menuIcon:hover i {
     color: #717171;
 }
 
@@ -113,15 +118,21 @@ html, body {
     border-radius: 10px;
 }
 
-.mainContent header .campoPesquisa .icon, .mainContent header .alertIcon {
+.mainContent header .campoPesquisa .icon, .mainContent header .alertIcon, .mainContent header .menuIcon {
     cursor: pointer;
     background-color: #d5d5d5;
     color: #fff;
     padding: 5px 10px;
     transition: .2s ease-in-out;
+    margin: 0 10px;
+}
+
+.mainContent header .campoPesquisa .icon {
+    margin-right: 0 !important;
 }
 
 .mainContent header .campoPesquisa input[type="text"] {
+    width: 100%;
     padding: 5px 5px 6px 5px;
     border: 1px solid #d5d5d5;
 }
@@ -205,4 +216,27 @@ html, body {
 .notification .notificationContent p {
     font-size: 13px;
     color: #b2b2b2;
+}
+
+@media screen and (max-width: 768px) {
+    .mainContent header .menuIcon {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .sideBar {
+        display: none;
+    }
+
+    .mainContent {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .notification {
+        display: none;
+    }
 }

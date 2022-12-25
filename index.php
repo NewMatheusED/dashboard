@@ -28,17 +28,21 @@
     <div class="mainContent">
         <div class="container">
             <header>
-                <div class="alertIcon">
-                    <i class="fa-solid fa-bell"></i>
-                    <span>2</span>
-                </div><!--alertIcon-->
-
+                <div class="menuIcon">
+                    <i class="fa-solid fa-bars"></i>
+                </div><!--menuIcon-->
+                
                 <div class="campoPesquisa">
                     <form>
                         <input type="text">
                     </form>
                     <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
                 </div><!--campoPesquisa-->
+                
+                <div class="alertIcon">
+                    <i class="fa-solid fa-bell"></i>
+                    <span>2</span>
+                </div><!--alertIcon-->
             </header>
 
             <div class="flexContent">
@@ -139,6 +143,7 @@
         </div><!--container-->
     </div><!--mainContent-->
     
+    <script src="jquery.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
